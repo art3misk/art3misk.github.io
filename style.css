@@ -34,13 +34,19 @@ body {
 }
 
 nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 24px;
+  width: calc(100vw - 44px);
+  max-width: none;
+  left: 10%;
+  transform: translateX(-50%);
   margin-bottom: 90px;
   font-size: 16px;
   letter-spacing: 0.03em;
+  padding: 0 22px;
 }
 
 nav a {
@@ -51,8 +57,9 @@ nav a {
 
 nav .headers-nav {
   display: flex;
-  gap: 16px;
+  gap: 25px;
   align-items: center;
+  margin-left: auto;
 }
 
 nav .headers-nav a {
@@ -61,8 +68,9 @@ nav .headers-nav a {
 
 nav .headers-nav img {
   display: block;
-  height: 37px;
+  height: 60px;
   width: auto;
+  border: none;
 }
 
 nav a:hover,
@@ -72,8 +80,16 @@ a:hover {
 
 .name {
   margin-left: 0;
-  color: var(--accent);
+  color: #643105;
   font-weight: bold;
+  font-size: 40px;
+}
+
+.name img {
+  display: block;
+  height: 60px;
+  width: auto;
+  border: none;
 }
 
 .hero {
