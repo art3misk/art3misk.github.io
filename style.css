@@ -49,6 +49,22 @@ nav a {
   margin-left: 22px;
 }
 
+nav .headers-nav {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+nav .headers-nav a {
+  margin-left: 0;
+}
+
+nav .headers-nav img {
+  display: block;
+  height: 32px;
+  width: auto;
+}
+
 nav a:hover,
 a:hover {
   color: var(--accent);
