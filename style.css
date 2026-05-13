@@ -97,7 +97,7 @@ a:hover {
 }
 
 .hero h2 {
-  font-size: clamp(30px, 6vw, 38px);
+  font-size: clamp(24px, 5vw, 30px);
   margin: 0 0 10px;
   font-weight: 500;
   letter-spacing: -0.04em;
@@ -184,12 +184,13 @@ h2 {
 
 .tagline {
   color: var(--muted);
-  font-size: 22px;
+  font-size: 18px;
   margin: 0;
 }
 
 .content p {
   color: var(--muted);
+  font-size: 18px;
   margin: 0 0 28px;
 }
 
