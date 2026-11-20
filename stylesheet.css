@@ -134,23 +134,69 @@ span.highlight {
   background-color: #ffffd0;
 }
 
-.colored-box {
-    color: black;
-    padding: 20px;
-    display: inline-block;
-    border-radius: 10px;
+.art-gallery {
+  box-sizing: border-box;
+  width: min(620px, calc(100% - 24px));
+  max-height: calc(100% - 24px);
+  padding: clamp(12px, 4vw, 26px);
+  color: #3c2832;
+  background: #fff9f3;
+  border: 1px solid #edcfc1;
+  border-radius: 18px;
+  box-shadow: 0 18px 60px #23142145;
+  font: 1rem 'Lato', Verdana, sans-serif;
 }
 
-.art-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 10px;
+.art-gallery::backdrop {
+  background: #261b2b91;
+}
+
+.art-gallery header,
+.art-gallery footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.art-gallery header {
+  justify-content: flex-end;
+}
+
+.art-gallery figure {
+  margin: 14px 0;
+  padding: 12px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #f0e2da;
+  border-radius: 8px;
+  box-shadow: 0 3px 9px #5e302810;
 }
 
 .art-gallery img {
   display: block;
   width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
-  border-radius: 6px;
+  height: min(52vh, 440px);
+  object-fit: contain;
+}
+
+.art-gallery button {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 6px 14px;
+  color: inherit;
+  background: #ffe7db;
+  border: 1px solid #e6bbab;
+  border-radius: 999px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.art-gallery button:hover {
+  background: #ffd7c5;
+}
+
+.art-gallery button:focus-visible {
+  outline: 2px solid #914a64;
+  outline-offset: 2px;
 }

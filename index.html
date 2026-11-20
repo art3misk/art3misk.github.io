@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="art-gallery.js" defer></script>
     
   </head>
 
@@ -108,20 +109,8 @@
             
            
             <tr>
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-						     <div class="colored-box" style="background-color: #fcb97d;">
-									 <h2>Art</h2>
-									 </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <div class="art-gallery">
-                  <!--
-                  Add art images to images/art/, then duplicate this link:
-                  <a href="images/art/example-full.jpg">
-                    <img src="images/art/example-thumb.jpg" alt="Artwork title">
-                  </a>
-                  -->
-                </div>
+              <td style="padding:8px 16px;vertical-align:middle">
+                <a href="data/bird.jpeg" data-open-art>Go through my amateur art</a>
               </td>
             </tr>
 
@@ -140,5 +129,17 @@
         </td>
       </tr>
     </table>
+    <dialog class="art-gallery" aria-label="Art gallery">
+      <header>
+        <form method="dialog"><button autofocus aria-label="Close art gallery">×</button></form>
+      </header>
+      <figure>
+        <img src="data/bird.jpeg" alt="Bird in a bowler hat" loading="lazy">
+      </figure>
+      <footer>
+        <button type="button" data-art-step="-1">Previous</button>
+        <button type="button" data-art-step="1">Next</button>
+      </footer>
+    </dialog>
   </body>
 </html>
